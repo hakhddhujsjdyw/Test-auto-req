@@ -6,7 +6,7 @@ from pyrogram.errors import UserNotParticipant, PeerIdInvalid, UserIsBlocked
 
 
 # bots imports
-from plugins.database import rkn_botz
+from RknDeveloper.database import rkn_botz
 from configs import rkn1
 import random, asyncio, os
 
