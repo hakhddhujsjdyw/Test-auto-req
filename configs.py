@@ -1,34 +1,3 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
-# Special Thanks To (https://github.com/JayMahakal98)
-# Update Channel @Digital_Botz & @DigitalBotz_Support
-
-"""
-Apache License 2.0
-Copyright (c) 2022 @RknDeveloper
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-Telegram Link : https://t.me/RknDeveloper
-Repo Link : https://github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot
-License Link : https://github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot/blob/main/LICENSE
-"""
 
 from os import path, getenv
 import os, time 
@@ -36,9 +5,9 @@ import os, time
 class Config:
     API_ID = int(getenv("API_ID", "15584001"))
     API_HASH = getenv("API_HASH", "e12f1473abbeaaf8302bf2692efd98f6")
-    BOT_TOKEN = getenv("BOT_TOKEN", "6728153756:AAE4OsSX-qLaQSCCzkLCLkavySp6oj_FBkk")
+    BOT_TOKEN = getenv("BOT_TOKEN", "7344396275:AAFZ9qCYGA2s06lPm2zJJkWFLaFtXMr5hBA")
  
-    ADMIN = list(map(int, getenv("ADMIN", "7425490417").split()))
+    ADMIN = list(map(int, getenv("ADMIN", "7425490417 1204889321").split()))
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002276401285"))
     
     # database configs
