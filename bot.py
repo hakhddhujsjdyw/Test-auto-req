@@ -10,7 +10,7 @@ from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 
 # bots imports
-from plugins.web_support import web_server
+from RknDeveloper.web_support import web_server
 from configs import rkn1
 
 # logging print 
