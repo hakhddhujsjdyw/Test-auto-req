@@ -5,14 +5,14 @@ import os, time
 class Config:
     API_ID = int(getenv("API_ID", "15584001"))
     API_HASH = getenv("API_HASH", "e12f1473abbeaaf8302bf2692efd98f6")
-    BOT_TOKEN = getenv("BOT_TOKEN", "7344396275:AAFZ9qCYGA2s06lPm2zJJkWFLaFtXMr5hBA")
+    BOT_TOKEN = getenv("BOT_TOKEN", "")
  
     ADMIN = list(map(int, getenv("ADMIN", "7425490417 1204889321").split()))
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002276401285"))
     
     # database configs
-    DB_URL = os.environ.get("DB_URL", "mongodb+srv://Nazriya:Nazriya@cluster0.tkpcb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-    DB_NAME = os.environ.get("DB_NAME", "Nazriya")
+    DB_URL = os.environ.get("DB_URL", "")
+    DB_NAME = os.environ.get("DB_NAME", "")
     
     #web response 
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
