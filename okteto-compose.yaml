@@ -10,3 +10,4 @@ services:
       - ADMIN=${ADMIN}
       - DB_URL=${DB_URL}
       - DB_NAME=${DB_NAME}
+
