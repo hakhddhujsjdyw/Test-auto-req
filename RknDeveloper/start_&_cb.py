@@ -4,6 +4,7 @@ from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, 
 from pyrogram import filters, Client, enums, errors
 from pyrogram.errors import UserNotParticipant, PeerIdInvalid, UserIsBlocked
 
+
 # bots imports
 from RknDeveloper.database import rkn_botz
 from configs import rkn1
@@ -12,26 +13,29 @@ import random, asyncio, os
 
 # Main Process _ _ _ _ _ Users Send Massage 🥀__🥀 Please 😢 Give Credit
 
-@Client.on_chat_join_request()#filters.group | filters.channel & filters.private)
-async def approve_request(bot, m):
+@Client.on_chat_join_request()
+async def accept_request(bot, r):
+
+    rm = InlineKeyboardMarkup([[
+        InlineKeyboardButton("💥 NEW MOVIES 💥", url=f"https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS")
+    ]])
+    
     try:
-        await rkn_botz.add_chat(bot, m)
-        await bot.approve_chat_join_request(m.chat.id, m.from_user.id)
-        img = random.choice(rkn1.SURPRICE)
-        await bot.send_video(m.from_user.id, img, "**Hey, {}!\nWelcome To {}\n\n__Pᴏᴡᴇʀᴅ Bʏ : @RknDeveloper__**".format(m.from_user.mention, m.chat.title), reply_markup=InlineKeyboardMarkup([[
-        InlineKeyboardButton("✛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀɴɴᴇʟ ࿇", url=f"https://t.me/{bot.username}?startchannel=Bots4Sale&admin=invite_users+manage_chat")
-        ],[
-        InlineKeyboardButton("✛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ࿇", url=f"https://t.me/{bot.username}?startgroup=Bots4Sale&admin=invite_users+manage_chat")]]))
-        await rkn_botz.add_user(bot, m)
+        await bot.send_message(
+            r.from_user.id,
+            f"**𝖧𝖾𝗅𝗅𝗈 {r.from_user.mention} 👻\n\n 𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 {r.chat.title} 𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖧𝖺𝗌 𝖡𝖾𝖾𝗇 𝖠𝗉𝗉𝗋𝗈𝗏𝖾𝖽.\n\nSend /start to know more**",
+            reply_markup=rm)
+                        
     except UserIsBlocked:
         print("User blocked the bot")
-    except PeerIdInvalid as err:
-        print(f"user isn't start bot (means group) Error- {err}")
-    except Exception as err:
-        print(f"Error\n{str(err)}")
+    except PeerIdInvalid:
+        print("Err")
+    except Exception as e:
+        print(f"#Error\n{str(e)}")
+
+    await r.approve()
         
-        
-   
+           
 # Start Massage _____ # Please 😢 Give Credit 
 
 @Client.on_message(filters.command("start"))
