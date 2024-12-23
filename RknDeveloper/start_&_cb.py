@@ -10,9 +10,6 @@ from RknDeveloper.database import rkn_botz
 from configs import rkn1
 import random, asyncio, os
 
-
-# Main Process _ _ _ _ _ Users Send Massage 🥀__🥀 Please 😢 Give Credit
-
 @Client.on_chat_join_request()
 async def accept_request(bot, r):
 
@@ -36,10 +33,7 @@ async def accept_request(bot, r):
         print(f"#Error\n{str(e)}")
 
     await r.approve()
-        
-           
-# Start Massage _____ # Please 😢 Give Credit 
-
+         
 @Client.on_message(filters.command("start"))
 async def start_commond(bot, m :Message):
     if m.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -53,8 +47,7 @@ async def start_commond(bot, m :Message):
             ))
             
     await rkn_botz.add_user(bot, m)   
-    await m.reply_video(video=rkn1.RKN_PIC, caption="**Hᴇy, {}!\n\nI'ᴍ Aɴ Aᴜᴛᴏ Aᴘᴘʀᴏᴠᴇ Bᴏᴛ.\nI Cᴀɴ Aᴘᴘʀᴏᴠᴇ Usᴇʀs Iɴ Cʜᴀɴɴᴇʟs & Gʀᴏᴜᴘs.Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀɴɴᴇʟ Aɴᴅ Gʀᴏᴜᴘ ᴀɴᴅ Pʀᴏᴍᴏᴛᴇ Mᴇ Tᴏ Aᴅᴍɪɴ Wɪᴛʜ Aᴅᴅ Mᴇᴍʙᴇʀs Pᴇʀᴍɪssɪᴏɴ.\n\n__Pᴏᴡᴇʀᴅ Bʏ : @CinemaKalavaraTG__**".format(m.from_user.mention), reply_markup=InlineKeyboardMarkup([[
-                #⚠️ don't change source code & source link ⚠️ #
+    await m.reply_video(video=rkn1.RKN_PIC, caption="**Hᴇy, {}!\n\nI'ᴍ Aɴ Aᴜᴛᴏ Aᴘᴘʀᴏᴠᴇ Bᴏᴛ.\nI Cᴀɴ Aᴘᴘʀᴏᴠᴇ Usᴇʀs Iɴ Cʜᴀɴɴᴇʟs & Gʀᴏᴜᴘs.Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀɴɴᴇʟ Aɴᴅ Gʀᴏᴜᴘ ᴀɴᴅ Pʀᴏᴍᴏᴛᴇ Mᴇ Tᴏ Aᴅᴍɪɴ Wɪᴛʜ Aᴅᴅ Mᴇᴍʙᴇʀs Pᴇʀᴍɪssɪᴏɴ.\n\n__Pᴏᴡᴇʀᴅ Bʏ : @CinemaKalavaraTG__**".format(m.from_user.mention), reply_markup=InlineKeyboardMarkup([[                
                 InlineKeyboardButton("✛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀɴɴᴇʟ ࿇", url=f"https://t.me/{bot.username}?startchannel=Bots4Sale&admin=invite_users+manage_chat")
                     ],[
                 InlineKeyboardButton("✛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ࿇", url=f"https://t.me/{bot.username}?startgroup=Bots4Sale&admin=invite_users+manage_chat")
