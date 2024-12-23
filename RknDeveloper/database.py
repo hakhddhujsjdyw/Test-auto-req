@@ -75,9 +75,3 @@ class Database:
         )
         
 rkn_botz = Database(rkn1.DB_URL, rkn1.DB_NAME)
-
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Bots
-# Developer @RknDeveloperr
-# Update Channel @Digital_Botz & @DigitalBotz_Support
