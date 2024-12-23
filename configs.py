@@ -34,17 +34,17 @@ from os import path, getenv
 import os, time 
 
 class Config:
-    API_ID = int(getenv("API_ID", "0112234"))
-    API_HASH = getenv("API_HASH", "abcdefg")
-    BOT_TOKEN = getenv("BOT_TOKEN", "1234567891:rkndeveloperDEhdhyjjvjjftSEW")
+    API_ID = int(getenv("API_ID", "15584001"))
+    API_HASH = getenv("API_HASH", "e12f1473abbeaaf8302bf2692efd98f6")
+    BOT_TOKEN = getenv("BOT_TOKEN", "7129284446:AAE8vzEaENMxF8m5NQqvOm9GOtPVdZkk76g")
  
-    FORCE_SUB = int(getenv("FORCE_SUB", "-1001819787652"))
-    ADMIN = list(map(int, getenv("ADMIN", "6151758586").split()))
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002120760645"))
+    FORCE_SUB = int(getenv("FORCE_SUB", "0"))
+    ADMIN = list(map(int, getenv("ADMIN", "7425490417").split()))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002276401285"))
     
     # database configs
-    DB_URL = os.environ.get("DB_URL", "")
-    DB_NAME = os.environ.get("DB_NAME", "")
+    DB_URL = os.environ.get("DB_URL", "mongodb+srv://Nazriya:Nazriya@cluster0.tkpcb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    DB_NAME = os.environ.get("DB_NAME", "Nazriya")
     
     #web response 
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
