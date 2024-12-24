@@ -52,8 +52,8 @@ async def start_commond(bot, m :Message):
                     ],[
                 InlineKeyboardButton("✛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ࿇", url=f"https://t.me/{bot.username}?startgroup=Bots4Sale&admin=invite_users+manage_chat")
                 ],[
-                InlineKeyboardButton("💥 Uᴘᴅᴀᴛᴇ 💥", url="https://t.me/+sT56Fh1VXZ81ZWRl"),
-                InlineKeyboardButton("🔎 Sᴜᴘᴘᴏʀᴛ 🔍", url="https://t.me/+sT56Fh1VXZ81ZWRl")
+                InlineKeyboardButton("💥 Uᴘᴅᴀᴛᴇ 💥", url="https://t.me/+pA8k6wHQO-k5ZTM9"),
+                InlineKeyboardButton("🔎 Sᴜᴘᴘᴏʀᴛ 🔍", url="https://t.me/+pA8k6wHQO-k5ZTM9")
             ]]))
             
  
@@ -64,7 +64,7 @@ async def start_query(bot, cb : CallbackQuery):
                     ],[
                 InlineKeyboardButton("✛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ࿇", url=f"https://t.me/{bot.username}?startgroup=Bots4Sale&admin=invite_users+manage_chat")
                 ],[
-                InlineKeyboardButton("💥 Uᴘᴅᴀᴛᴇ 💥", url="https://t.me/+sT56Fh1VXZ81ZWRl"),    
-                InlineKeyboardButton("🔎 Sᴜᴘᴘᴏʀᴛ 🔍", url="https://t.me/+sT56Fh1VXZ81ZWRl")
+                InlineKeyboardButton("💥 Uᴘᴅᴀᴛᴇ 💥", url="https://t.me/+pA8k6wHQO-k5ZTM9"),    
+                InlineKeyboardButton("🔎 Sᴜᴘᴘᴏʀᴛ 🔍", url="https://t.me/+pA8k6wHQO-k5ZTM9")
             ]]))
     
